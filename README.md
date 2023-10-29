@@ -25,14 +25,15 @@ The purpose of the analysis is to build a deep learning model to preduct whether
     * Identify and separate the target from the features data.
     * Split the data into a training and test dataset.
     * Fit the training dataset and scale the training and test datasets.
-3. Define and compile the model
-4. Train the model using the training dataset
-5. Evaluate the model using the test dataset
-6. Save the model in HDF5 format
+3. Define and compile the model.
+4. Train the model using the training dataset.
+5. Evaluate the model using the test dataset.
+6. Save the model in HDF5 format.
+
+Note: The saved model is available at https://medium.com/@ml_kid/how-to-save-our-model-to-google-drive-and-reuse-it-2c1028058cb2.
 
 ## Results
 As indicated above the model was trained to maximize accuracy. This resulted in the following.
-
 ![Model Evaluation](images/model_evaluation.png)
 
 ## Summary and Conclusions
