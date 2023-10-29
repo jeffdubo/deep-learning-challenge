@@ -18,13 +18,13 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 ## Overview of Analysis
 The purpose of the analysis is to build a deep learning model to preduct whether or not an applicant will be successful if they receive funding. To standardize and maximize memory and processing resources, the analysis was completed in Google Collaboratory in a Jupyter notebook. The process for analyzing the data is described as follows:
 1. Read in the CSV file into a Pandas dataframe.
-2. Preprocess the dataframe.
-  a. Remove unnecessary columns.
-  b. Identify categorial columns with 10 or more categories and reduce to less than 10.
-  c. Convert categorial columns to numeric using Pandas get_dummies method.
-  d. Identify and separate the target from the features data.
-  e. Split the data into a training and test dataset.
-  f. Fit the training dataset and scale the training and test datasets.
+2. Preprocess the data.
+    * Remove unnecessary columns.
+    * Identify categorial columns with 10 or more categories and reduce to less than 10.
+    * Convert categorial columns to numeric using Pandas get_dummies method.
+    * Identify and separate the target from the features data.
+    * Split the data into a training and test dataset.
+    * Fit the training dataset and scale the training and test datasets.
 3. Define and compile the model
 4. Train the model using the training dataset
 5. Evaluate the model using the test dataset
@@ -33,5 +33,6 @@ The purpose of the analysis is to build a deep learning model to preduct whether
 ## Results
 As indicated above the model was trained to maximize accuracy. This resulted in the following.
 
+![Model Evaluation](images/model_evaluation.png)
 
 ## Summary and Conclusions
