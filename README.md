@@ -28,7 +28,7 @@ The purpose of the analysis is to build a deep learning model to predict whether
 3. Define and compile the model.
 4. Train the model using the training dataset.
 5. Evaluate the model using the test dataset.
-6. Save the model in HDF5 format.
+6. Save the model in HDF5 format. The model was first saved in Google drive, then downloaded and pushed to Github.
 7. Create, train and evaluate additional models. Four models were created by varying the number of layers and neurons/nodes as well as the activation function and optimizer for compiling. The keras_tuner module was then used to find the best model given a range for the layers, nodes, and activation function.
 
 ## Results
