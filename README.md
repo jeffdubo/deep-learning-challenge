@@ -29,11 +29,25 @@ The purpose of the analysis is to build a deep learning model to preduct whether
 4. Train the model using the training dataset.
 5. Evaluate the model using the test dataset.
 6. Save the model in HDF5 format.
+7. Create, train and evaluate additional models. Four models were created by varying the number of layers and neurons/nodes as well as the activation function and optimizer for compiling. The keras_tuner module was then used to find the best model given a range for the layers, nodes, and activation function.
 
-Note: The saved model is available at https://medium.com/@ml_kid/how-to-save-our-model-to-google-drive-and-reuse-it-2c1028058cb2.
+Note: The first model is saved and accessible at 
 
 ## Results
-As indicated above the model was trained to maximize accuracy. This resulted in the following.
-![Model Evaluation](images/model_evaluation.png)
+Model #1:
+![Model#1 Evaluation](images/model_1_eval.png)
+
+Model #2:
+![Model#2 Evaluation](images/model_2_eval.png)
+
+Model #3:
+![Model#3 Evaluation](images/model_3_eval.png)
+
+Model #4:
+![Model#4 Evaluation](images/model_4_eval.png)
+
+Model #5 (Best Model using Keras Tuner):
+![Model#5 Evaluation](images/model_5_eval.png)
 
 ## Summary and Conclusions
+In reviewing the above results, all of the models performed poorly with an accuracy below 0.75 and loss greater than 0.50. Further testing of different hyperparameters including the activation function and optimizer would be beneficial though it seems like the data might be the issue. Even with scaling, there may be variables with outliers or confusing data. It is recommended that the variables be reviewed, compared, and, in some cases, plotted to assess and better understand the data. Additional data may also be needed to effectively train the model. It is also interesting that the data does not include multiple funding applications for the same organization. If organizations have been funded more than once, this data should be included in the dataset and used as a feature in the model. And finally, it is important to note that the data seems well-balanced and does not required resampling based on the value counts of funding being successful.
