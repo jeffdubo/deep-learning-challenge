@@ -31,8 +31,6 @@ The purpose of the analysis is to build a deep learning model to predict whether
 6. Save the model in HDF5 format.
 7. Create, train and evaluate additional models. Four models were created by varying the number of layers and neurons/nodes as well as the activation function and optimizer for compiling. The keras_tuner module was then used to find the best model given a range for the layers, nodes, and activation function.
 
-Note: The first model is saved and accessible at https://drive.google.com/drive/folders/1acxSMFm5Q_mU1yvb_GS_GtGR7YeG5sVJ?usp=drive_link
-
 ## Results
 ### Model #1:
 ![Model#1 Evaluation](images/model_1_eval.png)
@@ -51,3 +49,11 @@ Note: The first model is saved and accessible at https://drive.google.com/drive/
 
 ## Summary and Conclusions
 In reviewing the above results, all of the models performed poorly with an accuracy below 0.75 and loss greater than 0.50. Further testing of different hyperparameters including the activation function and optimizer would be beneficial though it seems like the data might be the issue. Even with scaling, there may be variables with outliers or confusing data. It is recommended that the variables be reviewed, compared, and, in some cases, plotted to assess and better understand the data. Additional data may also be needed to effectively train the model. It is also interesting that the data does not include multiple funding applications for the same organization. If organizations have been funded more than once, this data should be included in the dataset and used as a feature in the model. And finally, it is important to note that the data seems well-balanced and does not required resampling based on the value counts of funding being successful.
+
+## Repository Contents
+
+This repository contains the following folders and files:
+1. images - Folder with images for the results section in this file.
+2. saved_model - Folder with the first model saved in H5 format.
+3. charity_venture_funding.ipyng - Jupyter notebook used for analysis.
+4. README.md - This file.
