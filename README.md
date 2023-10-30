@@ -16,10 +16,10 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 * IS_SUCCESSFUL—Was the money used effectively
 
 ## Overview of Analysis
-The purpose of the analysis is to build a deep learning model to preduct whether or not an applicant will be successful if they receive funding. To standardize and maximize memory and processing resources, the analysis was completed in Google Collaboratory in a Jupyter notebook. The process for analyzing the data is described as follows:
-1. Read in the CSV file into a Pandas dataframe.
-2. Preprocess the data.
-    * Remove unnecessary columns.
+The purpose of the analysis is to build a deep learning model to predict whether or not an applicant will be successful if they receive funding. To standardize and maximize memory and processing resources, the analysis was completed in Google Collaboratory in a Jupyter notebook. The process for analyzing the data is described below:
+1. Read the CSV file into a Pandas dataframe.
+2. Preprocess the data as follows:
+    * Remove unnecessary idetnfication columns.
     * Identify categorial columns with 10 or more categories and reduce to less than 10.
     * Convert categorial columns to numeric using Pandas get_dummies method.
     * Identify and separate the target from the features data.
@@ -31,7 +31,7 @@ The purpose of the analysis is to build a deep learning model to preduct whether
 6. Save the model in HDF5 format.
 7. Create, train and evaluate additional models. Four models were created by varying the number of layers and neurons/nodes as well as the activation function and optimizer for compiling. The keras_tuner module was then used to find the best model given a range for the layers, nodes, and activation function.
 
-Note: The first model is saved and accessible at 
+Note: The first model is saved and accessible at https://drive.google.com/drive/folders/1acxSMFm5Q_mU1yvb_GS_GtGR7YeG5sVJ?usp=drive_link
 
 ## Results
 Model #1:
@@ -46,7 +46,7 @@ Model #3:
 Model #4:
 ![Model#4 Evaluation](images/model_4_eval.png)
 
-Model #5 (Best Model using Keras Tuner):
+Model rated #1 using Keras Tuner:
 ![Model#5 Evaluation](images/model_5_eval.png)
 
 ## Summary and Conclusions
