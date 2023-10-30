@@ -34,19 +34,19 @@ The purpose of the analysis is to build a deep learning model to predict whether
 Note: The first model is saved and accessible at https://drive.google.com/drive/folders/1acxSMFm5Q_mU1yvb_GS_GtGR7YeG5sVJ?usp=drive_link
 
 ## Results
-Model #1:
+### Model #1:
 ![Model#1 Evaluation](images/model_1_eval.png)
 
-Model #2:
+### Model #2:
 ![Model#2 Evaluation](images/model_2_eval.png)
 
-Model #3:
+### Model #3:
 ![Model#3 Evaluation](images/model_3_eval.png)
 
-Model #4:
+### Model #4:
 ![Model#4 Evaluation](images/model_4_eval.png)
 
-Model rated #1 using Keras Tuner:
+### Model rated #1 using Keras Tuner:
 ![Model#5 Evaluation](images/model_5_eval.png)
 
 ## Summary and Conclusions
